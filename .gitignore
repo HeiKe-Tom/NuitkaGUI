@@ -1,0 +1,26 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.vscode
+
+# venv
+.venv
+output
+assets
+logs
+测试
+*.txt
+.idea
+help
+config.json
+.ruff_cache
+dependence
+*.json
+*.xml
+*.spec
+*.log
+log.log

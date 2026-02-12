@@ -1,0 +1,20 @@
+{
+    "General": {
+        "自动更新插件": false,
+        "可用的Python.exe的路径": "E:\\Python\\python.exe",
+        "首次运行": false,
+        "保留不支持的命令": true,
+        "优化": "Compatibility",
+        "pip源": "https://pypi.douban.com/simple/",
+        "项目Python.exe的路径": "E:\\Python\\python.exe"
+    },
+    "QFluentWidgets": {
+        "FontFamilies": [
+            "Segoe UI",
+            "Microsoft YaHei",
+            "PingFang SC"
+        ],
+        "ThemeColor": "#ff009faa",
+        "ThemeMode": "Light"
+    }
+}
