@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NuitkaGUI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #0f0f1a, #000);
+    color: #00f2ff;
+    overflow-x: hidden;
+}
+
+/* 扫描线背景 */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0,255,255,0.04),
+        rgba(0,255,255,0.04) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+}
+
+/* 顶部区域 */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    text-shadow:
+        0 0 10px #00f2ff,
+        0 0 20px #00f2ff,
+        0 0 40px #0077ff;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00f2ff; }
+    to { text-shadow: 0 0 30px #00f2ff, 0 0 60px #0077ff; }
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* 通用卡片 */
+.section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 16px;
+    background: rgba(0,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,255,255,0.2);
+    box-shadow: 0 0 30px rgba(0,255,255,0.1);
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.section p, .section li {
+    line-height: 1.8;
+}
+
+/* 按钮 */
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 40px;
+    color: #000;
+    background: linear-gradient(90deg, #00f2ff, #0077ff);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00f2ff;
+}
+
+/* 列表 */
+ul {
+    margin-left: 20px;
+}
+
+/* 代码块 */
+pre {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-top: 15px;
+    color: #00ffcc;
+}
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>NuitkaGUI</h1>
+    <p>Professional GUI for Nuitka Packaging</p>
+    <a class="button" href="https://github.com/HeiKe-Tom/NuitkaGUI">
+        GitHub Repository
+    </a>
+</div>
+
+<div class="section">
+    <h2>⚡ 项目简介</h2>
+    <p>
+        NuitkaGUI 是一个现代化图形界面工具，用于简化 Nuitka 打包流程。
+        提供可视化配置、插件识别、虚拟环境检测与完整打包支持。
+    </p>
+</div>
+
+<div class="section">
+    <h2>🚀 功能特性</h2>
+    <ul>
+        <li>支持 Standalone / Onefile 模式</li>
+        <li>自动检测 Python 虚拟环境</li>
+        <li>插件依赖自动扫描</li>
+        <li>图标自定义支持</li>
+        <li>打包进度实时显示</li>
+        <li>Fluent Design 风格界面</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>📦 下载</h2>
+    <p>前往 GitHub Releases 下载最新版本：</p>
+    <a class="button" href="https://github.com/HeiKe-Tom/NuitkaGUI/releases">
+        Download Latest Version
+    </a>
+</div>
+
+<div class="section">
+    <h2>🛠 安装方式</h2>
+    <pre>
+git clone https://github.com/HeiKe-Tom/NuitkaGUI.git
+cd NuitkaGUI
+pip install -r requirements.txt
+python main.py
+    </pre>
+</div>
+
+<div class="section">
+    <h2>📜 License</h2>
+    <p>
+        本项目基于 MIT License 开源。
+    </p>
+</div>
+
+<div class="footer">
+    © 2026 NuitkaGUI · Cyber Tech Edition
+</div>
+
+</body>
+</html>
 
