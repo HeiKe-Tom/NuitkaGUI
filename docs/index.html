@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NuitkaGUI</title>
+<title>NuitkaGUI - Professional Packaging Tool</title>
+
+<!-- 网站标签页图标 -->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- 移动端优化 -->
+<meta name="theme-color" content="#000000">
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
@@ -37,7 +43,7 @@ body::before {
     pointer-events: none;
 }
 
-/* 顶部区域 */
+/* 顶部 Hero */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -45,6 +51,7 @@ body::before {
 
 .hero h1 {
     font-size: 64px;
+    letter-spacing: 4px;
     text-shadow:
         0 0 10px #00f2ff,
         0 0 20px #00f2ff,
@@ -63,7 +70,25 @@ body::before {
     opacity: 0.8;
 }
 
-/* 通用卡片 */
+/* 按钮 */
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 40px;
+    color: #000;
+    background: linear-gradient(90deg, #00f2ff, #0077ff);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00f2ff;
+}
+
+/* 内容区块 */
 .section {
     width: 85%;
     max-width: 1000px;
@@ -84,24 +109,6 @@ body::before {
     line-height: 1.8;
 }
 
-/* 按钮 */
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 40px;
-    color: #000;
-    background: linear-gradient(90deg, #00f2ff, #0077ff);
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #00f2ff;
-}
-
 /* 列表 */
 ul {
     margin-left: 20px;
@@ -109,7 +116,7 @@ ul {
 
 /* 代码块 */
 pre {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.8);
     padding: 20px;
     border-radius: 10px;
     overflow-x: auto;
@@ -133,27 +140,28 @@ pre {
     <h1>NuitkaGUI</h1>
     <p>Professional GUI for Nuitka Packaging</p>
     <a class="button" href="https://github.com/HeiKe-Tom/NuitkaGUI">
-        GitHub Repository
+        View on GitHub
     </a>
 </div>
 
 <div class="section">
     <h2>⚡ 项目简介</h2>
     <p>
-        NuitkaGUI 是一个现代化图形界面工具，用于简化 Nuitka 打包流程。
-        提供可视化配置、插件识别、虚拟环境检测与完整打包支持。
+        NuitkaGUI 是一个专为 Nuitka 打包设计的可视化工具，
+        让复杂命令行操作变得简单直观。
+        支持自动依赖扫描、模式切换、图标设置与虚拟环境检测。
     </p>
 </div>
 
 <div class="section">
-    <h2>🚀 功能特性</h2>
+    <h2>🚀 核心功能</h2>
     <ul>
         <li>支持 Standalone / Onefile 模式</li>
         <li>自动检测 Python 虚拟环境</li>
-        <li>插件依赖自动扫描</li>
+        <li>插件依赖自动识别</li>
         <li>图标自定义支持</li>
-        <li>打包进度实时显示</li>
-        <li>Fluent Design 风格界面</li>
+        <li>打包日志实时输出</li>
+        <li>Fluent 风格界面设计</li>
     </ul>
 </div>
 
@@ -166,7 +174,7 @@ pre {
 </div>
 
 <div class="section">
-    <h2>🛠 安装方式</h2>
+    <h2>🛠 本地运行</h2>
     <pre>
 git clone https://github.com/HeiKe-Tom/NuitkaGUI.git
 cd NuitkaGUI
@@ -177,9 +185,7 @@ python main.py
 
 <div class="section">
     <h2>📜 License</h2>
-    <p>
-        本项目基于 MIT License 开源。
-    </p>
+    <p>本项目基于 MIT License 开源。</p>
 </div>
 
 <div class="footer">
@@ -188,4 +194,3 @@ python main.py
 
 </body>
 </html>
-
